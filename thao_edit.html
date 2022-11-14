@@ -1,0 +1,48 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/style_form_input.css">
+    <title>Sửa sản phẩm</title>
+   
+
+</head>
+<body>
+
+<h1>SỬA SẢN PHẨM</h1>
+
+
+
+
+
+
+<div class="btn_add">
+   <a href="./product.php"><button class="btn6">Quay về mục sản phẩm</button></a>
+
+</div>
+
+<div class="add_mentor">
+   <div class="menber">
+    <form method="post" enctype="multipart/form-data">
+       <input type="text" class="form" name="name" placeholder="Tên sản phẩm" value="<?php echo " ". $row['name']  ?>">
+
+       <input type="file" class="form" name="image" placeholder="Hình ảnh"  >
+
+       <input type="text" class="form" name="price" placeholder="Giá" value="<?php echo " ". $row['price']  ?>"> 
+       <input type="text" class="form" name="warranty" placeholder="Công dụng chính" value="<?php echo " ". $row['warranty']  ?>">
+         <input type="submit" id="button" name="btn_edit" 
+         
+
+>
+         </form>
+   </div> 
+</div>
+</body>
+</html>
+
