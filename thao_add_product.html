@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm sản phẩm</title>
+    <link rel="stylesheet" href="./style/style_form_input.css">
+    <link rel="stylesheet" href="./style/button.css">
+ 
+</head>
+<body>
+
+<h1>THÊM SẢN PHẨM</h1>
+
+
+
+<div class="btn_add">
+   <a href="./product.php"><button class="btn6">Quay về</button></a>
+
+</div>
+
+<div class="add_mentor">
+   <div class="menber">
+    <form action="add_product.php" method="post" enctype="multipart/form-data">
+       <input type="text" class="form" name="name" placeholder="Tên sản phẩm">
+          
+       <input type="file" class="form" name="image" placeholder="Hình ảnh">
+       
+       <input type="text" class="form" name="price" placeholder="Giá"> 
+       <input type="text" class="form" name="warranty" placeholder="Công dụng">
+         <input type="submit" id="button" name="btn_add" value="Thêm giữ liệu">
+         </form>
+   </div> 
+</div>
+</body>
+</html>
